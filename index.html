@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Bài tập cắt giao diện</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+    <div class="wrapper">
+
+            <div class="header">
+                <div class="row">
+                    <div  id="logo">
+                        <img src="banner.jpg" alt="Viet Nam post">
+                    </div>
+                    <div  id="user_pro">
+                                <a href="#">
+                                    <i class="fa fa-user fa-fw"></i>
+                                    <span>Admin@gmail.com</span>
+                                    <i class="fa fa-ellipsis-v"></i>
+                                </a>
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="nav bg-info">
+                <a href="#">HỆ THỐNG</a>
+                <a href="#">KÊ KHAI</a>
+                <a href="#">QUẢN LÝ SỰ VỤ</a>
+                <a href="#">BÁO CÁO THỐNG KÊ</a>
+                <a href="#">QUẢN LÝ BIÊN LAI</a>
+                <a href="#">TRA CỨU</a>
+            </div>
+            <div class="main container-fluid">
+                
+            
+            <div class="row" id="body-row">
+                <div class="sidebar_menu">
+                <nav id="sidebar">
+                    <div class="sidebar-header">
+                            <div class="control bg-info">
+                                <button type="button" id="sidebarCollapse" class="bg-info">
+                                    <i class="glyphicon glyphicon-indent-right" id="hide" style="font-size: large;"></i>
+                                    <i class="glyphicon glyphicon-indent-left" id="show" style="font-size: large;"></i>
+                                </button>
+                            </div>
+    
+                    </div>
+                    <ul class="list-unstyled components">
+                        <li class="active">
+                            <a href="#" style="display: flex; justify-content: center;">
+                                <i class="glyphicon glyphicon-home"></i>
+                                <span>Danh mục hệ thống</span>
+                                <button type="button" class="i_show" data-toggle="collapse" data-target="#homeSubmenu">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                    <!-- <i class="glyphicon glyphicon-minus" id="show" ></i> -->
+                                </button>
+                            </a>
+                            <div class="collapse" id="homeSubmenu">
+                                <a href="#" class="" >
+                                    <div>
+                                        <span class="fa fa-user fa-fw mr-3"></span>
+                                        <span class="menu-collapsed">Danh sách người dùng</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="">
+                                    <div>
+                                        <span class="fa fa-user fa-fw mr-3"></span>
+                                        <span class="menu-collapsed">Danh sách người dùng</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="#" style="display: flex; justify-content: center;">
+                                <i class="glyphicon glyphicon-briefcase"></i>
+                                <span> Quản lý người dùng</span>
+                                <button type="button" class="i_show_page" data-toggle="collapse" data-target="#pageSubmenu">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                    <!-- <i class="glyphicon glyphicon-minus" id="show" ></i> -->
+                                </button>
+                            </a>
+                            <div class="collapse" id="pageSubmenu">
+                                <a href="#" class="">
+                                    <div>
+                                        <span class="fa fa-user fa-fw mr-3"></span>
+                                        <span class="menu-collapsed">Danh sách người dùng</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="">
+                                    <div>
+                                        <span class="fa fa-user fa-fw mr-3"></span>
+                                        <span class="menu-collapsed">Danh sách người dùng</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="#" >
+                                <i class="glyphicon glyphicon-duplicate"></i>
+                            </a>
+                            
+                        
+                            <a href="#">
+                                <i class="glyphicon glyphicon-link"></i>
+                            </a>
+                       
+                    </ul>
+    
+                   
+                </nav>
+            </div>
+                <!-- sidebar-container END -->
+                <!-- MAIN -->
+                
+                <!-- <div class="main_text"> -->
+                    <div class="category">
+                        <h1>Danh mục mạng lưới</h1>
+                        <hr>
+                        <div class="find">
+                            <label for="tk">Tìm kiếm : </label>
+                            <input type="text" placeholder="">
+                            <button type="button" class="btn btn-info">
+                                <span class="glyphicon glyphicon-search"></span> Search
+                            </button>
+                            
+                        </div>
+                        <div class="category_detail">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-folder" aria-hidden="true"></i>
+                                    <a href="#">00-- Tổng công ty</a>
+                                
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-folder" aria-hidden="true"></i>
+                                            <a href="#">10-- Bưu điện thành phố Hà Nội</a>
+                                        
+                                            <ul>
+                                                <li>
+                                                    <i class="fa fa-folder" aria-hidden="true"></i>
+                                                    <a href="#">1155-- Bưu điện trung tâm 6</a>
+                                                
+                                                    <ul>
+                                                        <li>
+                                                            <i class="fa fa-folder" aria-hidden="true"></i>
+                                                            <a href="#">127060-- KHL Hoàng Mai</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="infor">
+                    <h1>Thông tin chi tiết</h1>
+                    <hr>
+                    <div class="note_infor">
+                        <div class="note_infor_left">
+                            <span>Mã : </span>
+                            <span>Địa chỉ : </span>
+                            <span><br></span>
+                            <span>Số điện thoại : </span>
+                            <span>Loại BC : </span>
+                            <span>Cơ quan BHXH : </span>
+                        </div>
+                        <div class="note_infor_right">
+                            <div class="p1">
+                                <input type="text" placeholder="127060">
+                                <span style="display: inline-block">Tên :</span>
+                                <input type="text" placeholder="KHL Hoàng Mai">
+                            </div>
+
+                            <div class="p2">
+                                <input type="text" placeholder="phường Giáp Bát">
+                                <input type="text" placeholder="Quận Hoàng Mai">
+                                <input type="text" placeholder="TP Hà Nội">
+                            </div>
+
+                            <div class="p3"><input type="text" placeholder="Số 1000 Giải phóng"></div>
+
+                            <div class="p4">
+                                <input type="text">
+                                <span style="display: inline-block;">Số fax :</span>
+                                <input type="text">
+                            </div>
+
+                            <div class="p5">
+                                <input type="text" placeholder="0123456789">
+                                <span style="display: inline-block;">Phương thức :</span>
+                                <input type="text">
+                            </div>
+
+                            <div class="p6"><input type="text"></div>
+                        </div>
+                        
+                    
+                </div>
+</div>
+</div>
+
+    </div>
+    </div>
+    
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<!-- Bootstrap Js CDN -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+    
+    $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+        
+        });
+    });
+    $(document).ready(function(){
+  $("#homeSubmenu").on("hide.bs.collapse", function(){
+    $(".i_show").html('<span class="glyphicon glyphicon-plus"></span>');
+  });
+  $("#homeSubmenu").on("show.bs.collapse", function(){
+    $(".i_show").html('<span class="glyphicon glyphicon-minus"></span>');
+  });
+  $("#pageSubmenu").on("hide.bs.collapse", function(){
+    $(".i_show_page").html('<span class="glyphicon glyphicon-plus"></span>');
+  });
+  $("#pageSubmenu").on("show.bs.collapse", function(){
+    $(".i_show_page").html('<span class="glyphicon glyphicon-minus"></span>');
+  });
+});
+   
+</script>
+</body>
+</html>
